@@ -40,10 +40,14 @@
     </table>
     <br>
     <?php
+
+
         echo "Tudo escrito em PHP <br>";
         echo "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ↓ <br>";
-        $n1 = 3;
-        $n2 = 2;
+        $n1 = $_GET["a"];
+        $n2 = $_GET["b"];
+
+        echo "<h2>Valores recebidos: $n1 e $n2 </h2>";
         echo "A variavel n1 vale: $n1 <br>";
         echo "A variavel n2 vale: $n2 <br>";
         echo "A soma vale ".($n1 + $n2). "<br>";
